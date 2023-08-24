@@ -28,7 +28,6 @@ class GeographicSubAddressCreate(BaseModel):
 
 
 class GeographicalAddressCreate(BaseModel):
-    id: str
     href: str
     city: str
     geographic_address_type: str

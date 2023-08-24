@@ -56,7 +56,7 @@ class GeographicalAddress(Base):
     street_type = Column(String, name="streetType")
     country_code = Column(String, ForeignKey("countries.id"))
     country = relationship("Country")
-    geographic_location = Column(String, ForeignKey("geographic_locations.id"))
+    geographic_location_id = Column(String, ForeignKey("geographic_locations.id"))
     geographic_location_rel = relationship("GeographicLocation")
     geographic_sub_address = Column(String, ForeignKey("geographic_sub_addresses.id"))
     geographic_sub_address_rel = relationship("GeographicSubAddress")
